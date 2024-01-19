@@ -61,7 +61,7 @@ def send_http_get_request_socket(proxy, host, port, path, success_urls, lock):
     except Exception as e:
         print(f"Proxy: {proxy}, Host: {host}:{port}, Path: {path} - Error: {e}")
 
-with open('proxys.txt', 'r') as file:
+with open('proxies.txt', 'r') as file:
     proxies_list = [line.strip() for line in file]
 
 def setup():
